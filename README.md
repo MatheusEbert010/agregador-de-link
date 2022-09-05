@@ -1,2 +1,2 @@
-# agregador-de-link
+# agregador-de-link.github.io
 Quase um clone do linktree
