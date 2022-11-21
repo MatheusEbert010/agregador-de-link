@@ -1,14 +1,12 @@
 'use strict';
 
-function typeWriter(el){
+function typeWriter(elementEl){
     const textArray = el.innerHTML.split('');
-    el.innerHTML = "";
+    el.innerHTML = '';
 
     textArray.forEach((letter, i) => {
-        setTimeout(() => (el.innerHTML += letter), 95 +i);
+        setTimeout(() => (el.innerHTML + letter), 22 +i);
     });
     
-    setInterval(() => typeWriter(el), 8000);
+    setInterval(() => typeWriter(elementEl), 1000);
 }
-
-typeWriter(elementEl);

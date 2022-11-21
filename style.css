@@ -1,4 +1,5 @@
 body{
+    min-width: 150px;
     background-repeat: no-repeat;
     font-family:-apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -36,44 +37,52 @@ span{
     animation: blink 0.6s infinite;
 }
 .lrotate{
-    margin: 30px;
+    margin-top: 30px;
     width: 180px;
     height: 180px;
     animation: rotate 10s linear infinite;
 }
 
 .logos-png{
+    display: flex;
     width: 23px;
-    height: 25px;
+    height: 23px;
+    align-items: flex-start;
+    margin-right: 10px;
+    text-align: start;
 }
 .links-redes{
     margin: 50px;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    min-width: 160px;
 }
 a{
+    width: 400px;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
     background-color:#1c591c;
     text-transform: uppercase;
     color: #d0ffc0;
+    margin: 5px;
     text-decoration: none;
-    margin: 6px;
-    border: 1.5px solid #ffffed;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
 }
 a:hover{
     background-color: #077707;
     transition: 0.4s;
 }
 footer{
+    border: 2px solid;
     height: 10vh;
     background-color: #d0ffc0;
+    
+
 }
-p{
-    color: #032d02;
-    font-size: 10px;
-}
+
 @keyframes rotate {
     from {
         transform: rotate(1deg);
@@ -81,14 +90,5 @@ p{
 
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
     }
 }
